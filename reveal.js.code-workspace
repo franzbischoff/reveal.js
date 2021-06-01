@@ -317,7 +317,7 @@
       "**/.git/objects/**": true,
       "**/.git/subtree-cache/**": true,
       "**/.Rproj.user": true,
-      "**/dist/**": true,
+      "**/dist/**": false,
       "**/log/**": true,
       "**/logs/**": true,
       "**/R/RcppExports.R": true,
@@ -358,3 +358,7 @@
     "explorerExclude.backup": null
   }
 }
+
+// ubuntu 20.04
+// libxss-dev
+// libnss3
