@@ -14,7 +14,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 :root {
   --background-color: #fff;
   --main-font: Source Sans Pro, Helvetica, sans-serif;
-  --main-font-size: 42px;
+  --main-font-size: 41px;
   --main-color: #222;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
@@ -22,7 +22,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading-color: #222;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
-  --heading-text-transform: uppercase;
+  --heading-text-transform: capitalize;
   --heading-text-shadow: none;
   --heading-font-weight: 600;
   --heading1-text-shadow: none;
@@ -354,4 +354,77 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   .backgrounds {
     background-color: var(--background-color);
   }
+}
+/*********************************************
+ * Theme specific features
+ *********************************************/
+/* Position the corporate logo in the top right of the page */
+#header-footer .slide-logo {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  height: 60px;
+  width: 150px;
+}
+
+/* Style/position the footer text */
+#header-footer .slide-footer {
+  position: fixed;
+  margin: 16px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  text-align: center;
+  font-size: 100%;
+}
+
+/* Styling for references */
+#refs {
+  font-size: 0.5em;
+  column-count: 2;
+}
+
+/*********************************************
+ * Some tweaks to reveal css from R package
+ *********************************************/
+.reveal h1 {
+  font-size: 2em;
+}
+.reveal h2 {
+  font-size: 1.5em;
+}
+.reveal h3 {
+  font-size: 1.25em;
+}
+.reveal h4 {
+  font-size: 1em;
+}
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 0px 0px;
+}
+.reveal table td, .reveal table th, .reveal table {
+  border-width: 1px;
+  border-style: dotted;
+  border-color: gray;
+}
+.reveal table td, .reveal table th {
+  padding-left: 10px;
+  padding-right: 25px;
+}
+.reveal table {
+  border-spacing: 2px;
+  border-collapse: collapse;
+  font-size: 0.7em;
+}
+.reveal table th {
+  font-weight: bold;
+}
+.reveal .slide-menu-button {
+  left: 105px !important;
+}
+
+code {
+  white-space: pre;
 }

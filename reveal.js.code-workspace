@@ -4,7 +4,24 @@
       "path": "."
     }
   ],
+  "launch": {
+    "configurations": [
+      {
+        "name": "Browser Preview: Attach",
+        "request": "attach",
+        "type": "browser-preview"
+      },
+      {
+        "name": "Browser Preview: Launch",
+        "request": "launch",
+        "type": "browser-preview",
+        "url": "http://localhost:8000/tsdemo.html"
+      }
+    ],
+    "version": "0.1.0"
+  },
   "settings": {
+    "browser-preview.startUrl": "http://127.0.0.1:8000/tsdemo.html",
     "C_Cpp.default.browse.path": [
       "${workspaceRoot}/src"
     ],
@@ -229,6 +246,7 @@
     "editor.tabCompletion": "on",
     "editor.tabSize": 2,
     "editor.wordWrapColumn": 120,
+    "explorerExclude.backup": {},
     "files.associations": {
       "*.ipp": "cpp",
       "*.tcc": "cpp",
@@ -308,15 +326,15 @@
       "vector": "cpp"
     },
     "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
       ".history": true,
+      "**/.DS_Store": true,
+      "**/.git": true,
       "**/.git/objects/**": true,
       "**/.git/subtree-cache/**": true,
+      "**/.hg": true,
       "**/.Rproj.user": true,
+      "**/.svn": true,
+      "**/CVS": true,
       "**/dist/**": false,
       "**/log/**": true,
       "**/logs/**": true,
@@ -355,10 +373,17 @@
     "todo-tree.tree.expanded": true,
     "todo-tree.tree.scanMode": "workspace",
     "todo-tree.tree.showScanModeButton": true,
-    "explorerExclude.backup": null
+    "triggerTaskOnSave.resultIndicator": "statusBar.background",
+    "triggerTaskOnSave.resultIndicatorResetTimeout": 1,
+    "triggerTaskOnSave.showStatusBarToggle": true,
+    "triggerTaskOnSave.tasks": {
+      "css-franz": [
+        "**/franz_reveal.scss"
+      ]
+    },
+    "workbench.colorCustomizations": {}
   }
 }
-
 // ubuntu 20.04
 // libxss-dev
 // libnss3
